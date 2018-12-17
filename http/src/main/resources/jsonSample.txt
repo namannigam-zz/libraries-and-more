@@ -1,0 +1,194 @@
+{
+"campaignProperties": {
+"title": "Google Home Trivia",
+"subTitle": "Play and Win Google Home",
+"author": "naman.nigam",
+"announcementTime": 1538542379000,
+"startTime": 1538568000000,
+"endTime": 1538697600000,
+"rulesInfo": {
+"displayTitle": "How To Play",
+"howToPlayRules": [
+{
+"title": "Rule1",
+"subtitle": "First rule is..",
+"image": "link"
+}
+]
+},
+"rewardInfo": [
+{
+"countOfRewardWinners": 5,
+"reward": {
+"title": "Google Home Mini",
+"imageLink": "link of procut image",
+"landingLink": "product page link",
+"priceValue": 13999
+}
+},
+{
+"countOfRewardWinners": 3,
+"reward": {
+"title": "Billion Power Bank",
+"imageLink": "link of procut image",
+"landingLink": "product page link",
+"priceValue": 899
+}
+}
+],
+"completionInfo": {
+"message": "Thanks for Playing!",
+"imageLink": "Stars image",
+"landingLink": "Final page link"
+},
+"sponsorInfo": {
+"campaignTagLine": "If there is sponsor details.",
+"campaignSponsorLogo": "any image for sponsor",
+"landingUrl": "link to sponsor CLP"
+}
+},
+"triviaQuestions": [
+{
+"author": "string",
+"questionText": "string",
+"questionImageLink": "string",
+"options": [
+{
+"key": "string",
+"optionText": "string"
+},
+{
+"key": "string",
+"optionText": "string"
+},
+{
+"key": "string",
+"optionText": "string"
+}
+],
+"correctOption": "string"
+},
+{
+"author": "string",
+"questionText": "string",
+"questionImageLink": "string",
+"options": [
+{
+"key": "string",
+"optionText": "string"
+},
+{
+"key": "string",
+"optionText": "string"
+}
+],
+"correctOption": "string"
+},
+{
+"author": "string",
+"questionText": "string",
+"questionImageLink": "string",
+"options": [
+{
+"key": "string",
+"optionText": "string"
+},
+{
+"key": "string",
+"optionText": "string"
+},
+{
+"key": "string",
+"optionText": "string"
+},
+{
+"key": "string",
+"optionText": "string"
+},
+{
+"key": "string",
+"optionText": "string"
+}
+],
+"correctOption": "string"
+},
+{
+"author": "string",
+"questionText": "string",
+"questionImageLink": "string",
+"options": [
+{
+"key": "string",
+"optionText": "string"
+},
+{
+"key": "string",
+"optionText": "string"
+},
+{
+"key": "string",
+"optionText": "string"
+},
+{
+"key": "string",
+"optionText": "string"
+},
+{
+"key": "string",
+"optionText": "string"
+}
+],
+"correctOption": "string"
+}
+],
+"simultaneousTriviaCampaignProperties": {
+"futureClue": "stringasdasdasd for clue",
+"questionTimeInSecs": 15,
+"questionTimeLapseInSecs": 10,
+"startBufferTimeInSecs": 120,
+"simultaneousTriviaExtraInfo": {
+"mainBannerImageUrl": "string",
+"energyIcon": "string",
+"animationPNG": [
+"string"
+],
+"backgroundColorCode": "string",
+"backgroundImageUrl": "string",
+"fetchingResultText": "string",
+"statsFailureText": "string",
+"statsFailureImage": "string",
+"incorrectAnswerEmojiUrl": "string",
+"incorrectAnswerText": "string",
+"correctAnswerEmojiUrl": "string",
+"correctAnswerText": "string",
+"bottomSponsorImage": "string",
+"gameShareText": "string",
+"scoreShareText": "string",
+"energyForTriviaBackground": "string",
+"notifyButtonColor": "string",
+"earnEnergyColor": "string",
+"shareButtonColor": "string",
+"loginToJoinButtonColor": "string",
+"joinGameButtonColor": "string",
+"icon": "string",
+"htp": {
+"displayTitle": "string",
+"howToPlayRules": [
+{
+"title": "string",
+"subtitle": "string",
+"image": "string"
+}
+]
+},
+"confettiImage": "string",
+"hintTextScolls": [
+"string"
+],
+"gameIsAboutToBegin": "string",
+"questionLockColor": "string",
+"notSubmittedAnswerEmojiUrl": "string",
+"notSubmittedAnswerText": "string"
+}
+}
+}

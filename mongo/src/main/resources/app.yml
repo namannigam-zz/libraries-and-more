@@ -1,0 +1,52 @@
+server:
+  applicationConnectors:
+    - type: http
+      port: 8180
+  adminConnectors:
+    - type: http
+      port: 8181
+  requestLog:
+      appenders:
+        - type: file
+          currentLogFilename: /var/log/mongo/transaction/access.log
+          threshold: ALL
+          archive: true
+          archivedLogFilenamePattern: /var/log/mongo/transaction/access.%i.log.gz
+          maxFileSize: 50MB
+          archivedFileCount: 10
+          timeZone: IST
+
+mongoConfig:
+  servers: ["10.32.137.248:27101"]
+  maxConnections: 25
+  socketTimeout: 6000
+  connectionTimeout: 6000
+startupConfig:
+  schedulerInitialDelay: 0
+  schedulerRefreshPeriod: 60000
+  namespace: preprod
+healthCheckName: MongoHealth
+swagger:
+  title: Application
+  description: APIs for Testing
+  contact: namannigam12@gmail.com
+  uriPrefix: /
+  resourcePackage: com.stackoverflow.nullpointer
+logging:
+    level: INFO
+    loggers:
+      io.dropwizard: INFO
+    appenders:
+      - type: file
+        threshold: ALL
+        currentLogFilename: /var/log/mongo/transaction/mongo-transaction-service.log
+        threshold: ALL
+        archive: true
+        archivedLogFilenamePattern: /var/log/mongo/transaction/mongo-transaction-service-%i.log.gz
+        maxFileSize: 50MB
+        archivedFileCount: 5
+        timeZone: IST
+      - type: console
+        threshold: ALL
+        timeZone: IST
+        target: stdout
