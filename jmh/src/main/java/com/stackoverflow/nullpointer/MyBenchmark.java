@@ -32,19 +32,29 @@
 package com.stackoverflow.nullpointer;
 
 import org.openjdk.jmh.annotations.Benchmark;
+import org.openjdk.jmh.annotations.BenchmarkMode;
+import org.openjdk.jmh.annotations.Mode;
+import org.openjdk.jmh.annotations.OutputTimeUnit;
+import org.openjdk.jmh.infra.Blackhole;
 
-import java.util.List;
-import java.util.stream.Stream;
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.util.concurrent.TimeUnit;
 
-import static java.util.stream.Collectors.toList;
-
+@BenchmarkMode(Mode.AverageTime)
+@OutputTimeUnit(TimeUnit.NANOSECONDS)
 public class MyBenchmark {
+    @Benchmark
+    public void writerMethod(Blackhole bh) {
+        StringWriter sw = new StringWriter();
+        new PrintWriter(sw);
+    }
 
     @Benchmark
-    public void testMethod() {
-        // This is a demo/sample template for building your JMH benchmarks. Edit as needed.
-        // Put your benchmark code here.
-        Stream<Integer> someStream = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-        List<Integer> list1 = someStream.sorted().collect(toList());
+    public void throwAndConsumeStacktrace() {
+        try {
+            throw new IllegalArgumentException("I love benchmarks");
+        } catch (IllegalArgumentException ignored) {
+        }
     }
 }
